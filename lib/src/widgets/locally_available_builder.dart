@@ -96,7 +96,6 @@ class _LocallyAvailableBuilderState extends State<LocallyAvailableBuilder> {
     try {
       _isLocallyAvailable = await widget.asset.isLocallyAvailable(
         isOrigin: widget.isOriginal,
-        withSubtype: widget.withSubtype,
       );
     } catch (e, s) {
       _markAndPresentError(e, s);
